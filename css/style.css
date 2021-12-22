@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+/*Обнуление стилей*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer__item-form input:not([type=checkbox])::-moz-placeholder,
+.main .services__form input::-moz-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.footer__item-form input:not([type=checkbox]):-ms-input-placeholder,
+.main .services__form input:-ms-input-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.footer__item-form input:not([type=checkbox])::placeholder,
+.footer__item-form input:not([type=checkbox]),
+.footer a,
+.footer .address,
+.main .company__text,
+.main .company__name,
+.main .services__form input::placeholder,
+.main .services__form input,
+.main .services__info .services__text,
+.header .menu__list li a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.footer__item-form label,
+.main .services__forms label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.footer__item-form .footer__item-title,
+.footer span,
+.footer .footer__name,
+.footer__title,
+.main .company__title,
+.header__tel a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.footer .footer__checkbox button,
+.main .services__form button,
+.main .services__info .services__title h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu__list {
+  display: flex;
+}
+
+.header .menu__list li {
+  padding: 30px 0px;
+}
+
+.header .menu__list li:hover {
+  background-color: #4169C1;
+}
+
+.header .menu__list li a {
+  font-size: 16px;
+  letter-spacing: 5%;
+  color: #001A33;
+  margin: 0px 15px;
+}
+
+.header__tel a {
+  font-size: 22px;
+  line-height: 28px;
+  color: #0B0B0B;
+}
+
+.main .services {
+  position: relative;
+}
+
+.main .services img {
+  background-size: cover;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.main .services__content {
+  background-color: rgba(0, 27, 52, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main .services__info {
+  padding-top: 110px;
+}
+
+.main .services__info .services__title h1 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 55px;
+  letter-spacing: 1.5%;
+  text-align: center;
+}
+
+.main .services__info .services__text {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px 0px 40px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.main .services__forms {
+  padding-top: 100px;
+}
+
+.main .services__forms-body {
+  padding: 40px 70px;
+  background-color: #F4F8FF;
+  opacity: 0.99;
+  border-radius: 5px;
+  box-shadow: 1px 4px 12px 9px rgba(34, 60, 80, 0.2);
+}
+
+.main .services__forms label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #001A33;
+  margin-bottom: 2px;
+}
+
+.main .services .services__forms-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.main .services .services__forms-title span {
+  color: #4169C1;
+}
+
+.main .services__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main .services__form input {
+  background-color: #E7ECF3;
+  padding: 14px 15px;
+  border-radius: 5%;
+  width: 250px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main .services__form input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1010107e;
+}
+
+.main .services__form input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1010107e;
+}
+
+.main .services__form input::placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1010107e;
+}
+
+.main .services__form button {
+  border-radius: 23px;
+  background-color: transparent;
+  background-color: #FD6612;
+  color: #fff;
+  padding: 14px 55px;
+  line-height: 21px;
+  letter-spacing: 5%;
+  text-align: center;
+}
+
+.main .company {
+  padding: 100px 0px 80px;
+}
+
+.main .company .company__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .company__title {
+  color: #001A33;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.main .company__name {
+  color: #001A33;
+  font-size: 22px;
+  line-height: 35px;
+  margin: 20px 0px;
+}
+
+.main .company__text {
+  color: rgba(0, 26, 51, 0.7);
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.footer {
+  background-color: #4169C1;
+}
+
+.footer__title {
+  font-size: 35px;
+  line-height: 45px;
+  color: #fff;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  margin-bottom: 15px;
+}
+
+.footer span,
+.footer .footer__name {
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.footer a,
+.footer .address {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 70%;
+}
+
+.footer__email {
+  margin-bottom: 15px;
+}
+
+.footer__address-data {
+  margin-bottom: 30px;
+}
+
+.footer__address-data address {
+  display: inline-block;
+}
+
+.footer__item-form {
+  background-color: #fff;
+}
+
+.footer__forms-row {
+  display: flex;
+  overflow: hidden;
+}
+
+.footer__forms-personal-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer input,
+.footer textarea {
+  background-color: #EEF2F9;
+}
+
+.footer textarea {
+  resize: none;
+  padding: 10px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.footer__item-form {
+  padding: 40px 70px 60px;
+  box-shadow: 1px 4px 12px 9px rgba(34, 60, 80, 0.2);
+}
+
+.footer__item-form .footer__item-title {
+  color: #001A33;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.footer__item-form label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #001A33;
+  margin-bottom: 2px;
+}
+
+.footer__item-form input:not([type=checkbox]) {
+  background-color: #E7ECF3;
+  padding: 14px 15px;
+  border-radius: 5%;
+  width: 250px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__item-form input:not([type=checkbox])::-moz-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1010107e;
+}
+
+.footer__item-form input:not([type=checkbox]):-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1010107e;
+}
+
+.footer__item-form input:not([type=checkbox])::placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1010107e;
+}
+
+.footer__item-form .footer__forms-personal-data {
+  margin-right: 30px;
+}
+
+.footer .footer__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer__checkbox button {
+  border-radius: 23px;
+  background-color: transparent;
+  background-color: #FD6612;
+  color: #fff;
+  padding: 10px 55px;
+  line-height: 21px;
+  letter-spacing: 5%;
+}
