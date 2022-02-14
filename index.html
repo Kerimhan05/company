@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-        href="https: //fonts.googleapis.com/css2? family = Raleway: wght @ 300; 400; 500; 700 & family = Roboto: wght @ 300; 400 & display = swap "
-        rel=" stylesheet ">
-    <link rel="stylesheet" href="css/style.min.css">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
@@ -59,7 +60,6 @@
                             Российской Федерации
                         </div>
                         <div class="services__forms">
-                            <img src="img/forms__img.png" alt="">
                             <div class="services__forms-body">
                                 <div class="services__forms-title">
                                     Оставьте заявку на <span>бесплатную </span>консультацию
@@ -81,7 +81,7 @@
                                             class="services__input-email default-input">
                                     </label>
                                     <div class="services__form-btn">
-                                        <button class="services-btn">Отправить</button>
+                                        <button class="services-btn default__btn">Отправить</button>
                                     </div>
                                 </div>
                             </div>
@@ -118,19 +118,273 @@
                 </div>
             </div>
         </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio__body">
+                    <div class="portfolio__title">
+                        Наше портфолио
+                    </div>
+                    <div class="portfolio__slider swiper">
+                        <div class="portfolio__items swiper-wrapper">
+                            <div class="portfolio__slide swiper-slide">
+                                <div class="slide__img">
+                                    <img src="img/slider-img.png" alt="">
+                                </div>
+                                <div class="slide__info">
+                                    <div class="slide__info-title">Ремонт эстакад</div>
+                                    <div class="slide__info-text">Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</div>
+                                    <div class="slide__works">
+                                        <div class="slide__works-title">
+                                            Проделанные работы:
+                                        </div>
+                                        <div class="slide__works-items">
+                                            <div class="works__1">
+                                                <div class="slide__works-item">Выкопали ямы (незнай зачем)</div>
+                                                <div class="slide__works-item">Рельсы рельсы, шпалы шпалы</div>
+                                            </div>
+                                            <div class="works__2">
+                                                <div class="slide__works-item">Положили рельсы</div>
+                                                <div class="slide__works-item">Ехал поезд запоздалый</div>
+                                            </div>
+                                        </div>
+                                        <div class="slide__works-btn">
+                                            <button class="services-btn default__btn">оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__slide swiper-slide">
+                                <div class="slide__img">
+                                    <img src="img/slider-img.png" alt="">
+                                </div>
+                                <div class="slide__info">
+                                    <div class="slide__info-title">Ремонт эстакад</div>
+                                    <div class="slide__info-text">Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</div>
+                                    <div class="slide__works">
+                                        <div class="slide__works-title">
+                                            Проделанные работы:
+                                        </div>
+                                        <div class="slide__works-items">
+                                            <div class="works__1">
+                                                <div class="slide__works-item">Выкопали ямы (незнай зачем)</div>
+                                                <div class="slide__works-item">Рельсы рельсы, шпалы шпалы</div>
+                                            </div>
+                                            <div class="works__2">
+                                                <div class="slide__works-item">Положили рельсы</div>
+                                                <div class="slide__works-item">Ехал поезд запоздалый</div>
+                                            </div>
+                                        </div>
+                                        <div class="slide__works-btn">
+                                            <button class="services-btn default__btn">оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__slide swiper-slide">
+                                <div class="slide__img">
+                                    <img src="img/slider-img.png" alt="">
+                                </div>
+                                <div class="slide__info">
+                                    <div class="slide__info-title">Ремонт эстакад</div>
+                                    <div class="slide__info-text">Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</div>
+                                    <div class="slide__works">
+                                        <div class="slide__works-title">
+                                            Проделанные работы:
+                                        </div>
+                                        <div class="slide__works-items">
+                                            <div class="works__1">
+                                                <div class="slide__works-item">Выкопали ямы (незнай зачем)</div>
+                                                <div class="slide__works-item">Рельсы рельсы, шпалы шпалы</div>
+                                            </div>
+                                            <div class="works__2">
+                                                <div class="slide__works-item">Положили рельсы</div>
+                                                <div class="slide__works-item">Ехал поезд запоздалый</div>
+                                            </div>
+                                        </div>
+                                        <div class="slide__works-btn">
+                                            <button class="services-btn default__btn">оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            ...
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__body">
+                    <div class="benefits__title">
+                        <h3>
+                            Преимущества работы с нами
+                        </h3>
+                    </div>
+                    <div class="benefits__grids">
+                        <div class="grid__item">
+                            <div class="grid__item-icon item1"></div>
+                            <div class="grid__item-info">
+                                <div class="grid__item-title">
+                                    <h6>
+                                        Экономия стредств
+                                    </h6>
+                                </div>
+                                <div class="grid__item-text">
+                                    <p>
+                                        Специалисты нашей компании грамотно рассчитываю объем работ и количество
+                                        затрачиваемых материалов, что позволяет исключить дополнительные расходы на
+                                        заключительных этапах.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="grid__item-icon item2"></div>
+                            <div class="grid__item-info">
+                                <div class="grid__item-title">
+                                    <h6>
+                                        Большой опыт
+                                    </h6>
+                                </div>
+                                <div class="grid__item-text">
+                                    <p>
+                                        За 2020 год наша компания уложила более 5 километров новых железнодорожных путей
+                                        и
+                                        отремонтировала более 30 километров.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="grid__item-icon item3"></div>
+                            <div class="grid__item-info">
+                                <div class="grid__item-title">
+                                    <h6>
+                                        Удобная оплата
+                                    </h6>
+                                </div>
+                                <div class="grid__item-text">
+                                    <p>
+                                        Постоянный поставщик, сертифицированные материалы. Все сотрудники имеют высокую
+                                        квалификацию. Работы выполняются современными специализированными инструментами
+                                        и
+                                        оборудованием.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="grid__item-icon item4"></div>
+                            <div class="grid__item-info">
+                                <div class="grid__item-title">
+                                    <h6>
+                                        Оперативность
+                                    </h6>
+                                </div>
+                                <div class="grid__item-text">
+                                    <p>
+                                        Один из ключевых факторов нашей работы. Скорость реагирования — залог
+                                        бесперебойной
+                                        работы железнодорожного транспорта.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="grid__item-icon item5"></div>
+                            <div class="grid__item-info">
+                                <div class="grid__item-title">
+                                    <h6>
+                                        Высокий сервис
+                                    </h6>
+                                </div>
+                                <div class="grid__item-text">
+                                    <p>
+                                        Наша компания открыта для поиска оптимальных решений с целью достижения
+                                        поставленных
+                                        клиентами задач.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item">
+                            <div class="grid__item-icon item6"></div>
+                            <div class="grid__item-info">
+                                <div class="grid__item-title">
+                                    <h6>
+                                        Качество
+                                    </h6>
+                                </div>
+                                <div class="grid__item-text">
+                                    <p>
+                                        Для постоянных клиентов существует возможность оплаты в рассрочку. Предлагаем
+                                        поэтапную оплату или работаем с предоплатой менее 40%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__body">
+                    <div class="about__title">
+                        <h3>
+                            О нашей компании
+                        </h3>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__info">
+                            <div class="info__title">
+                                Компания ООО”Название”
+                            </div>
+                            <div class="info__text">
+                                Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт
+                                железнодорожных тупиков, стрелочных переводов, переездов. Опытные сотрудники, наличие
+                                необходимого оборудования позволяет в кратчайшие сроки выполнить работы любой сложности
+                                качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие СРО. Подбор
+                                материалов от новых до Б/У от партнёров.
+                            </div>
+                            <div class="info__img">
+                                <div class="info__items">
+                                    <div class="info__item">
+                                        <img src="img/about-2.png" alt="">
+                                    </div>
+                                    <div class="info__item">
+                                        <img src="img/about-3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__img">
+                            <img src="img/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__body">
                 <div class="footer__items">
-                    <div class="footer__item">
+                    <div class="footer__item footer__contacts-item">
                         <div class="footer__title">
                             Контакты
                         </div>
                         <div class="footer__contacts">
                             <span class="footer__tel">Телефон</span>
+                            <div class="contacts-phone">
                             <a class="footer__tel-1" href="tel:8(902)272-93-14">8(902)272-93-14</a><br>
                             <a class="footer__tel-2" href="tel:8(982)178-03-07">8(982)178-03-07</a>
+                        </div>
                         </div>
                         <div class="footer__email">
                             <span class="footer__email">Email</span>
@@ -204,7 +458,17 @@
                 </div>
             </div>
         </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-items">
+                    <div class="footer__item">Все права защищены.</div>
+                    <div class="footer__item">Разработка сайта - студия “ТвойСтартап”</div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
