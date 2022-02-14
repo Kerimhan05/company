@@ -9,3 +9,9 @@ const swiper = new Swiper('.swiper', {
 
     // And if we need scrollbar
 });
+
+let menuBtn = document.querySelector('.header__menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+    menu.classList.toggle('active');
+})

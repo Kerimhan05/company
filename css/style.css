@@ -778,8 +778,107 @@ body {
   margin-bottom: 27px;
 }
 
-@media screen and (max-width: 1200px) {
-  .header {
-    display: none;
+.header__menu-btn {
+  display: none;
+}
+.media__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-btn img {
+  width: 32px;
+  height: 32px;
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .menu{
+    position:absolute;
+    top:-1px;
+    left:0;
+    width:60%;
+    height:100%;
+    padding:15px;
+    background-color: #001A33;
+    transform:translateX(-100%);
+    transition:transform .5s;
+    -webkit-transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+    -o-transform:translateX(-100%);
+    z-index:60
   }
+  .header .menu__list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .menu__list li {
+    padding: 10px 0px;
+    color: #fff;
+  }
+
+  .header .menu__list li a{
+    color: #fff;
+  }
+
+  .header__menu-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .main .services__form {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .main .services__form label{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main .services__form input{
+    width: 100%;
+  }
+
+  .main .services__forms {
+    padding-top: calc(50px + (100 - 50) * (100vw - 320px) / (1230 - 320));
+  }
+
+  .main .services .services__forms-title {
+    text-align: center;
+  }
+
+  .main .services__forms-body {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .main .services__info {
+    padding-top: calc(20px + (110 - 20) * (100vw - 320px) / (1230 - 320));
+  }
+
+  .main .services__info .services__title h1  {
+    font-size: calc(20px + (44 - 20) * (100vw - 320px) / (1230 - 320));
+    line-height: calc(33px + (55 - 33) * (100vw - 320px) / (1230 - 320));
+    margin-bottom: 20px;
+  }
+
+  .main .services__info .services__text {
+    font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1230 - 320));
+    line-height: calc(25px + (30 - 25) * (100vw - 320px) / (1230 - 320));
+  }
+
+  .main .services .services__forms-title {
+    font-size: calc(18px + (22 - 18) * (100vw - 320px) / (1230 - 320));
+    line-height: calc(20px + (28 - 20) * (100vw - 320px) / (1230 - 320));
+  }
+}
+
+.active{
+  transform:translateX(0);
+  -webkit-transform:translateX(0);
+  -moz-transform:translateX(0);
+  -ms-transform:translateX(0);
+  -o-transform:translateX(0)
 }
