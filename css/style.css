@@ -777,3 +777,9 @@ body {
 .footer__title {
   margin-bottom: 27px;
 }
+
+@media screen and (max-width: 1200px) {
+  .header {
+    display: none;
+  }
+}
